@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.ana-kapsayici{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover, a:focus{
+    color: black;
+}
+
+/*
+ÜST MENÜ*/
+
+.ust-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.logo-kapsayici{
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+.logo-kapsayici img{
+    height: 100%;
+    cursor: pointer;
+}
+.logo-kapsayici i{
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 160px;
+    bottom: 20px;
+}
+.ust-butonlar{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+.ust-butonlar a{
+    cursor: pointer;
+}
+
+/*
+AKIŞ
+*/
+
+/*
+HİKAYELER
+*/
+
+.akis{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+.hikaye1{
+    display: flex;
+}
+.hikayeler{
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    scrollbar-width: none;
+}
+.hikaye {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.hikaye img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.hikaye span{
+    color: gray;
+    font-size: 12px;
+
+}
+
+/* GÖNDERİLER */
+.gonderiler{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.gonderi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.gonderi-ust{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+}
+.gonder-ust{
+    cursor: pointer;
+}
+.gonderen{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.gonderen img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.gonderen h5{
+    font-weight: 500;
+}
+.gonderi-medya{
+    width: 100%;
+    height: auto;
+}
+.gonderi-medya img{
+    width: 100%;
+}
+.gonderi-alt{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 13px;
+}
+.islemler{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.sol{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.yorumlar p:nth-of-type(2){
+    color: gray;
+}
+.yorumlar ~p{
+    color: gray;
+}
+
+/* ALT MENÜ */
+
+.alt-menu{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.alt-menu img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* RESPONSE */
+
+@media (min-width: 768px) {
+    body{
+        margin: 0 10%;
+        margin-bottom: 100px;
+
+    }
+    .gonderi-ust{
+        padding: 0;
+        
+    }
+}
+@media (min-width: 991px) {
+    body{
+        margin: 0 15%;
+
+    }
+}
+@media (min-width: 1224px){
+    body{
+    margin: 0 25%;
+}
+}
+   
+
+    
+
